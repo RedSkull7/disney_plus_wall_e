@@ -4,13 +4,13 @@
     top: 230px;
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh - 350px);
     padding: calc(3.5vw + 24px);
-    position: relative;
+    position: absolute;
 
     @media (max-width: 768px) {
-        top: calc(3.5vw + 200px);
-        padding: calc(3.5vw + 24px);
+        top: 0px;
+        position: relative;
+        padding: 10px calc(3.5vw + 24px);
     }
 
     &__content {
@@ -35,7 +35,7 @@
 
 .fundo{
     display: flex;
-    position: absolute;
+    position: relative;
     left: 0px;
     right: 0px;
     top: 0px;
