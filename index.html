@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WALL-E | Disney+</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+        <header class="header">
+            <nav class="nav__container">
+                <div class="header__container">
+                        <img class="header__logo" src="./dist/imagens/disneyplus.svg" alt="Disney+">
+                    <ul class="header__links">
+                        <li class="header__links__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+                            </svg>
+                            <a href="#" class="button">
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="header__links__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                            <a href="#" class="button">Pesquisar</a>
+                        </li>
+                        <li class="header__links__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                            </svg>
+                            <a href="#" class="button">Minha Lista</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    
+        <div class="fundo" style="opacity: 1;">
+            <img src="./dist/imagens/wall-e.jpeg" style="width: 100vw" alt="WALL-E">
+            <div class="view__content__fundo">
+                <img class="title--film" style="z-index: 1; opacity: 1;" src="./dist/imagens/titulo.png" alt="titulo wall-e">
+            </div>
+        </div>
+            <section class="view">
+                <div class="view__content" style="z-index: 1;">
+                        <div class="view__content__fundo__legenda" style="z-index: 1;">
+                            <img src="./dist/imagens/li.png" alt="" srcset="" height="20px">
+                            <img src="./dist/imagens/cc.png" alt="" height="20px"  style="margin-left: 4px;">
+                            <span class="text--small" style="margin-left: 4px;">
+                                2008 • 1h 38min
+                            </span>
+                        </div>
+                        <p class="text--small">
+                            Ficção científica, Familia, Animação, Ação e aventura
+                        </p>
+                        <div class="menu">
+                            <button class="button button--primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16" padding="0" margin="0">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                                Assistir
+                            </button>
+                            <button class="button button--secundary">Trailer</button>
+                            <button class="button button--tertiary">+</button>
+                        </div>
+                            <p class="text--big">
+                                Depois de centenas de anos solitários fazendo o que ele foi construído para fazer, o robô curioso e adorável WALL-E descobre um novo propósito na vida quando ele conhece uma robô elegante chamada EVA. Junte-se a eles e um elenco hilariante de personagens em uma viagem através do universo.
+                            </p>
+                </div>
+            </section>
+        
+            <section class="detalhes" style="z-index: 1;">
+                <nav class="detalhes__more" >
+                    <button data-tab-button="sugestoes" class="detalhes__more__button detalhes__more__button--is-active">
+                        Sugestões
+                    </button>
+                    <button data-tab-button="sobre" class="detalhes__more__button">
+                        Detalhes
+                    </button>
+                </nav>
+    
+                <ul data-tab-id="sugestoes" class="detalhes__list detalhes__list--is-active">
+                    <li class="detalhes__list__item">
+                        <img src="./dist/imagens/filme1.jpg" alt="" srcset="">
+                    </li>
+                    <li class="detalhes__list__item">
+                        <img src="./dist/imagens/imagem2.jpg" alt="" srcset="">
+                    </li>
+                    <li class="detalhes__list__item">
+                        <img src="./dist/imagens/imagem3.jpg" alt="" srcset="">
+                    </li>
+                    <li class="detalhes__list__item">
+                        <img src="./dist/imagens/imagem4.jpg" alt="" srcset="">
+                    </li>
+                    <li class="detalhes__list__item">
+                        <img src="./dist/imagens/imagem5.jpg" alt="" srcset="">
+                    </li>
+                    <li class="detalhes__list__item">
+                        <img src="./dist/imagens/imagem6.jpg" alt="" srcset="">
+                    </li>
+                </ul>
+    
+                <ul data-tab-id="sobre" class="detalhes__list">
+                    <div class="detalhes__conteudo" style="display: grid; grid-template-columns: 1fr 1fr;">
+                        <div class="detalhe__conteudo__text">
+                            <h2 class="tittle--big destaque">
+                                WALL-E
+                            </h2>
+                            <p class="text--big">
+                                O aclamado diretor de "Procurando Nemo" e os criadores de "Carros" e "Ratatouile" transportam você para uma galáxia não muito distante nessa aventura interplanetária sobre um robô muito determinado chamado WALL-E. Depois de milhares de solitários anos fazendo o que ele foi construído para fazer, o curioso e adorável WALL-E encontra uma nova razão para viver quando conhece uma robô de busca de alto design chamada EVA. Junte-se ao casal e ao divertido elenco de personagens nessa fantástica viagem pelo universo. Venha para esse fascinante novo mundo com a mais recente aventura da Disney e Pixar. "WALL-E" é um filme que você e toda sua família vão adorar ver muitas e muitas vezes.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="destaque">Duração:</p>
+                            <p class="text">1h 38min</p>
+        
+                            <p class="destaque">Data de Lançamento:</p>
+                            <p class="text">2008</p>
+        
+                            <p class="destaque">Gênero</p>
+                            <p class="text">Ficção científica, Família, Animação, Ação e aventura</p>
+        
+                            <p class="destaque">Classificação:</p>
+                            <img src="./dist/imagens/li.png" alt="" srcset="" width="20px" style="margin-left: 4px;">
+                        </div>
+                    </div>
+                </ul>
+            </section>
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>

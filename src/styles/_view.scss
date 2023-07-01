@@ -1,0 +1,105 @@
+@use 'variaveis';
+
+.view {
+    top: calc(3.5vw + 320px);
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 350px);
+    padding: calc(3.5vw + 24px);
+    position: relative;
+
+    @media (max-width: 768px) {
+        top: calc(3.5vw + 200px);
+        padding: calc(3.5vw + 24px);
+    }
+
+    &__content {
+        max-width: 874px;
+
+        &__fundo {
+            align-items: center;
+            display: flex;
+            position: absolute;
+            margin: 0 auto;
+            min-height: 170px;
+            padding: 150px calc(3.5vw + 24px) 0px;
+            width: 100%;
+
+            &__legenda{
+                align-items: center;
+                display: flex;
+            }
+        }
+    }
+}
+
+.fundo{
+    display: flex;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 0;
+}
+
+
+.title--film {
+    max-width: 341px;
+    min-width: 100px;
+    width: 35vw;
+}
+
+.menu {
+    margin-top: 32px;
+    align-items: center;
+    display: flex;
+}
+
+.button {
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        text-align: center;
+        justify-content: center;
+        display: inline-flex;
+        padding: 24px;
+        border: none;
+
+        &--primary {
+            align-items: center;
+            height: 56px;
+            width: auto;
+            margin: 4px;
+            padding: 0 24px;
+            background-color: variaveis.$corDaBordaBotao;
+            border-radius: 0.25rem;
+            color: variaveis.$corDeFundoBotao;
+        }
+
+        &--secundary {
+            align-items: center;
+            height: 56px;
+            width: auto;
+            padding: 0 24px;
+            background-color: variaveis.$corDeFundoBotaoSecundario;
+            border: 1px solid variaveis.$corDaBordaBotao;
+            border-radius: 0.25rem;
+            color: variaveis.$corDaBordaBotao;
+            margin: 0px 11px;
+            width: auto;
+        }
+
+        &--tertiary {
+            border: 2px solid variaveis.$corDaBordaBotao;
+            height: 2.75rem;
+            width: 2.75rem;
+            border-radius: 100%;
+            align-items: center;
+            font-size: 25px;
+            background-color: variaveis.$corDeFundoBotaoSecundario;
+            color: variaveis.$corDaBordaBotao;
+        }
+    }

@@ -1,0 +1,89 @@
+@use 'variaveis';
+
+.detalhes {
+    position: relative;
+    padding: 0 calc(3.5vw + 24px);
+    z-index: 1;
+
+    &__list {
+        list-style: none;
+        margin-top: 24px;
+        display: none;
+        gap: 24px;
+        position: relative;
+
+        &--is-active {
+            display: flex;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            width: 100%;
+            overflow-x: scroll;
+        }
+    }
+
+        &__conteudo{
+            padding: 15px;
+            background-color: variaveis.$corDeFundo;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            &__text{
+                color: variaveis.$corDaBordaBotao;
+                margin-left: 4px;
+                
+                .destaque{
+                    color: variaveis.$corTextoSecundario;
+                    margin-left: 4px;
+                }
+                }
+            }
+
+        &__item{
+            img {
+                max-width: 100%;
+                border-radius: 4px;
+                padding-bottom: 50px;
+            }
+        }
+    
+
+    &__conteudo{
+        margin-top: 10px;
+
+        &__text{        
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            color: variaveis.$corDaBordaBotao;
+            margin-left: 4px;
+
+                &--is-active {
+                    border-color: variaveis.$corTextoPrincipal;
+                }
+            }
+        }
+
+    &__more {
+        margin-top: 24px;
+        border-bottom: 2px solid variaveis.$corTextoSecundario;
+
+        &__button {
+            color: variaveis.$corTextoPrincipal;
+            font-size: 20px;
+            border: none;
+            padding: 5px;
+            background: none;
+            text-transform: uppercase;
+            margin-right: 20px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+
+            &--is-active{
+                border-color: variaveis.$corTextoPrincipal;
+            }
+    }
+    }
+    .destaque{
+        color: variaveis.$corTextoSecundario;
+        margin-left: 4px;
+    }
+    }
