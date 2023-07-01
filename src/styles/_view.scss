@@ -1,7 +1,7 @@
 @use 'variaveis';
 
 .view {
-    top: calc(3.5vw + 320px);
+    top: 230px;
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - 350px);
